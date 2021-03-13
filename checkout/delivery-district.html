@@ -1,0 +1,25 @@
+<label for="select_district_name">None Pickup Location <span style="font-size:16px;color:red;">*</span></label>
+
+<select id="select_district_name">
+    <option value="">Select District</option>
+    
+</select>
+
+<label for="user_input_branch_name"><!--Delivery Branch--></label>
+
+<select id="user_input_branch_name" name="user_input_branch_name">
+    <option value="0">Select Branch</option>
+    
+</select>
+
+<script>
+    var options = $("#user_input_branch_name").html();
+    $(document).on("change", "#select_district_name", function () {
+        var text = $("#select_district_name :selected").text();
+        $("#user_input_branch_name").html(options);
+        if (text == "Select District") return;
+        $('#user_input_branch_name :not([data-value^="' + text.substr(0, 3) + '"])').remove();
+        $("#user_input_branch_name").prepend("<option value='' selected='selected'>Select Branch</option>");
+    });
+</script>
+

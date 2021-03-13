@@ -1,0 +1,506 @@
+/* Top Bar height is 120px */
+
+/* Progress Indicator */
+
+.nav-progress {
+	margin-top: 120px;
+	position: relative;
+	width: 100%;
+	height: 150px;
+	background-color: #ffffff;
+}
+
+
+.progress-indicator {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  transform: translateY(-50%);
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+}
+
+.progress-indicator > li {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.progress-indicator > li span {
+  position: absolute;
+  color: #e6e6e6;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+}
+
+.progress-indicator > li::before {
+  content: attr(data-step);
+  display: block;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #000000;
+  width: 2.7em;
+  height: 2.7em;
+  text-align: center;
+  margin-bottom: 0.25em;
+  line-height: 2.7em;
+  position: relative;
+  z-index: 1000;
+}
+
+.progress-indicator > li::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #e6e6e6;
+  width: 100%;
+  height: 0.10em;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  left: 50%;
+  margin-left: 1.5em\9;
+  z-index: 0;
+}
+
+.progress-indicator > li:last-child:after {
+  display: none;
+}
+
+.progress-indicator > li.is-complete {
+  color: #1779ba;
+}
+
+.progress-indicator > li.is-complete::before, .progress-indicator > li.is-complete::after {
+  color: #ffffff;
+  background: #000000;
+}
+
+.progress-indicator > li.is-complete span {
+  color: #1779ba;
+}
+
+.progress-indicator > li.is-current {
+  color: #4eabe9;
+}
+
+.progress-indicator > li.is-current::before {
+  color: #ffffff;
+  background: #000000;
+}
+
+.progress-indicator > li.is-current span {
+  color: #4eabe9;
+}
+
+#progress-labels {
+	top: 67%;
+	transform: translateY(0);
+}
+
+#progress-labels li {
+	font-size: 0.8rem;
+	font-weight: bold;
+	background-color: #ffffff;
+
+}
+
+#progress-labels li::before {
+	width: auto;
+	background: #ffffff;
+	border: none;
+}
+
+
+#progress-labels li::after {
+	background: #ffffff;
+}
+
+/* Progress Indicator End */
+
+/* Shopping Cart Content Section */
+
+.shopping-cart-content {
+	position: relative;
+	width: 100%;
+	margin-top: 50px;
+	background-color: #ffffff;
+}
+
+.shopping-cart-content .cell {
+	position: relative;
+}
+
+/* Shopping Cart Items */
+
+.shopping-cart-content #cart-cell h1{
+	position: relative;
+	font-size: 1.5rem;
+	font-weight: bold;
+	left: 2%;
+	width: 96%;
+	background-color: #ffffff;
+}
+
+.shopping-cart-content .cart-details {
+	position: relative;
+	width: 96%;
+	height: 25px;
+	left: 2%;
+	background-color: #ffffff;
+}
+
+.shopping-cart-content .cart-items {
+	position: relative;
+	left: 2%;
+	width: 96%;
+	height: auto;
+	border-top: 1px solid #e6e6e6;
+	/*border-bottom: 1px solid #e6e6e6;*/
+	padding-top: 10px;
+	margin-bottom: 50px;
+}
+
+.shopping-cart-content .cart-items .cart-item {
+	margin-bottom: 1.5em;
+}
+
+.shopping-cart-content .cart-items .item-thumbnail {
+	position: relative;
+	width: 100%;
+	padding-top: 66.66%;
+}
+
+.shopping-cart-content .cart-items .item-thumbnail img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.shopping-cart-content .cart-items .description a, .shopping-cart-content .cart-items .description p, .cart-items p {
+	margin-left: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #000000;
+	font-size: 0.8rem;
+}
+
+.shopping-cart-content .cart-items .qty-select {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.shopping-cart-content .cart-items .qty-select p, .shopping-cart-content .cart-items .item-price {
+	line-height: 25px;
+	font-size: 0.8rem;
+	margin-left: 0;
+}
+
+
+.shopping-cart-content .cart-items .qty-select .minus-btn[type=button],
+.shopping-cart-content .cart-items .qty-select .plus-btn[type=button] {
+	position: relative;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.shopping-cart-content .cart-items .qty-select .minus-btn[type=button]:disabled,
+.shopping-cart-content .cart-items .qty-select .plus-btn[type=button]:disabled {
+    color: #e7e7e7;
+}
+
+
+
+.shopping-cart-content .cart-items .qty-select .minus-btn {
+	margin-left: 10px;
+	z-index: 1;
+}
+
+.shopping-cart-content .cart-items .qty-select .plus-btn {
+	margin-right: 10px;
+	z-index: 1;
+}
+
+.shopping-cart-content .cart-items .qty-select .remove-btn {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	background-color: #ffffff;
+	color: #000000;
+	width: auto;
+	height: auto;
+	font-size: 0.8rem;
+	border: none;
+	border-bottom: 1px solid #000000;
+	cursor: pointer;
+}
+
+.shopping-cart-content .cart-items .remove-btn-small {
+	display: none;
+}
+
+/* Shopping Cart Items End */
+
+/* Information Section */
+
+.checkout-details {
+	position: relative;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	width: 96%;
+	height: auto;
+	padding-bottom: 50px;
+	margin: 10px auto 0 auto;
+	max-width: 500px;
+}
+
+.checkout-details h1 {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 0.8rem;
+	width: 75%;
+}
+
+.checkout-details h2 {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 0.8rem;
+
+}
+
+.checkout-details .ptc-btn {
+	height: 30px;
+	margin-top: 50px;
+	width: 150px;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+.shopping-cart-content .order-help {
+	position: relative;
+	width: 96%;
+	margin: 10px auto 0 auto;
+	border: 1px solid #000000;
+	max-width: 500px;
+}
+
+.shopping-cart-content .order-help h1 {
+	font-size: 0.8rem;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.shopping-cart-content .order-help p {
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.shopping-cart-content .pnr-info .cell {
+	margin-bottom: 50px;
+}
+
+
+/*css for branch and voucher*/
+.display_branch_input_box {
+    display: none;
+}
+
+.display_branch_input_box .box {
+    width: 95%;
+    height: auto;
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    border: 1px solid #000000;
+    padding: 2rem 1rem;
+    margin: auto;
+}
+
+.display_branch_input_box .box label {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align:left;
+}
+
+.shopping-cart-content .voucher-details {
+    position: relative;
+    width: 96%;
+    margin: 10px auto 0 auto;
+    border: 1px solid #000000;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 40em) {
+    .shopping-cart-content .voucher-details {
+        width: 100%;
+    }
+}
+
+.voucher_response_block {
+    display: none;
+    padding: 10px;
+}
+
+.shopping-cart-content .voucher-details h1 {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.shopping-cart-content .voucher-details h2 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.shopping-cart-content .voucher-details h3 {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+.shopping-cart-content .voucher-details .voucher-submit-button-small {
+    border: 1px solid grey;
+    width: 100%;
+    color: #000;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    transition: all .4s ease;
+}
+
+.shopping-cart-content .voucher-details .voucher-submit-button-small:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.voucher_response_block .button-block .cell {
+    padding: 0 .5rem;
+}
+
+.voucher_response_block .voucher_discount_amount_block {
+	font-size:0.8rem;
+	padding-right: 0.5rem;
+}
+
+.voucher_response_block .voucher_discount_amount_block .voucher_discount_amount_show{
+    float: right;
+}
+.cancel_voucher_button2{
+    display: none;
+}
+/*.voucher_response_msg{*/
+/*    margin-bottom: 10px;*/
+/*    text-transform: uppercase;*/
+/*}*/
+.voucher_apply_msg_block{
+    padding:0 0 10px 0;
+	font-size: 0.8rem;
+}
+
+.voucher_apply_msg {
+    background-color: #000000;
+    opacity: 0.8;
+    color: #ffffff;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+/* Information Section End */
+
+/* Shopping Cart Content Section End */
+
+/*Customize CSS*/
+
+.nav_custom_progress {
+	margin-top: 120px;
+	position: relative;
+	width: 100%;
+	height: 150px;
+	background-color: #ffffff;
+}
+
+
+
+.custom-progress-indicator {
+	position: absolute;
+	top: 50%;
+	margin: 0;
+	transform: translateY(-50%);
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	display: table;
+	table-layout: fixed;
+}
+
+
+.custom-progress-indicator > li {
+	position: relative;
+	display: table-cell;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+@media screen and (max-width: 40em) {
+	.nav-progress {
+        margin-top: 70px;
+    }
+
+    .shopping-cart-content .order-help h1, .shopping-cart-content .order-help p {
+    	font-size: 0.7rem;
+    }
+
+    .shopping-cart-content .order-help, .checkout-details {
+		width: 100%;
+	}
+
+	.shopping-cart-content {
+		margin-top: 30px;
+	}
+}
+
+
+
+
+

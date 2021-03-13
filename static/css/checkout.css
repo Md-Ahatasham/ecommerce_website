@@ -1,0 +1,386 @@
+
+.header {
+    height: 120px;
+    width: 100%;
+}
+
+.header img {
+    margin-top: 20px;
+    width: 113.46px;
+    height: 78.46px;
+}
+
+/*Custom radio button CSS*/
+label {
+    font-size: 15px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+span.del-heading {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+span.del-description {
+    position: relative;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+#selected-dm-text {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    display: none;
+}
+
+.middle {
+
+    margin: auto;
+}
+
+.middle input[type="radio"] {
+    display: none;
+}
+
+.middle input[type="radio"]:checked + .box {
+    border-bottom-width: 5px;
+}
+
+.middle input[type="radio"]:checked + .box p {
+    color: #000000;
+}
+
+.middle input[type="radio"]:checked + .box p:before {
+    opacity: 1;
+}
+
+.middle input[type="radio"]:checked + .box #selected-dm-text {
+    display: block;
+}
+
+.middle .box {
+    width: 95%;
+    height: auto;
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #000000;
+    padding: 2rem 1rem;
+    margin: auto;
+}
+
+.middle .box:hover {
+    border-bottom-width: 5px;
+}
+
+
+.middle .box p {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    right: 0;
+    transition: all 300ms ease;
+    user-select: none;
+    line-height: 17px;
+}
+
+.middle .box p:before {
+    display: block;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    font-weight: normal;
+    color: white;
+}
+
+.middle p {
+    color: #000;
+}
+
+.middle p a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #fff;
+}
+
+.middle label {
+    float: left;
+}
+
+.section-title {
+    font-size: 30px;
+}
+
+.grid-x .cell {
+    position: relative;
+}
+
+#info-cell h5 {
+    font-weight: 600;
+}
+
+.shopping-cart-content .shopping-bag-header {
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.ptp-btn {
+    height: 30px;
+    margin-top: 50px;
+    width: 150px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#sign-in-cell {
+    border-right: 1px solid #e6e6e6;
+}
+
+.sign-up {
+    position: relative;
+    top: 70px;
+    left: 0;
+    transform: none;
+    margin-bottom: 100px;
+}
+
+.sign-up p {
+    margin-bottom: 2em;
+}
+
+.sign-up .button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    width: 200px;
+
+}
+
+.sign-in-form-button:hover, .sign-up .button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+#address {
+    width: 90%;
+    margin-left: 5%;
+}
+
+#shipping-details form {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.shipping-method {
+    margin-bottom: 50px;
+    /*display: none;*/
+}
+
+
+.shipping-method h4 {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.shipping-method .shipping-option {
+    height: 100px;
+    width: 150px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+}
+
+.shipping-method .shipping-option.selected {
+    background: linear-gradient(to right, #e6e6e6, #ffffff, #e6e6e6);
+}
+
+.shipping-method p {
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%,-50%);*/
+    margin: 0;
+}
+
+.ptpayment-btn {
+    height: 50px;
+    width: 200px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    left: 47%;
+    transform: translate(-50%, 0);
+    margin-bottom: 50px;
+}
+
+.custom-select {
+    margin-top: 40px;
+    /*margin-bottom: 20px;*/
+}
+
+.shipping_address_form_div {
+    /*display: none;*/
+    margin-top: 40px;
+}
+
+.address-option-btn {
+    background-color: #ffffff;
+    border: 1px solid grey;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.5s;
+}
+
+.address-option-btn.selected {
+    background: linear-gradient(to right, #e6e6e6, #ffffff, #e6e6e6);
+}
+
+.address-option-btn:hover {
+    /* background: linear-gradient(to right, #e6e6e6, #ffffff, #e6e6e6); */
+
+    background: #000000;
+    color: #ffffff;
+}
+
+.shopping-cart-content .cart-items .description a {
+    font-size: .9rem;
+}
+
+
+/* Delivery address design*/
+
+.delivery-address h4 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+/* radion button image */
+html {
+    scroll-behavior: smooth;
+}
+
+.shopping-cart-content .cart-items #thumbnail-cell {
+    max-width: 200px;
+    margin: auto;
+}
+
+.shopping-cart-content .cart-items .item-thumbnail img {
+    left: 0;
+}
+
+.shopping-cart-content .cart-items .description {
+    margin-bottom: 10px;
+}
+
+.shopping-cart-content .cart-items .description a,
+.shopping-cart-content .cart-items .description p,
+.shopping-cart-content .cart-items p {
+    margin-left: 0;
+}
+
+#checkout-qty-cell, #checkout-price-cell {
+    height: 27px;
+    border: 1px solid #000000;
+}
+
+#checkout-qty-cell p, #checkout-price-cell p {
+    line-height: 27px;
+}
+
+#checkout-price-cell {
+    border-left: none;
+}
+
+.cart-items {
+    max-height: 480px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 340px) {
+    .sign-in-form h4 {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-device-width: 341px) and (max-device-width: 380px) {
+    .sign-in-form h4 {
+        margin-top: 2rem;
+    }
+}
+
+
+#proceed_to_payment_btn, #proceed_to_payment_btn_disabled {
+    margin: 2rem auto;
+}
+
+#checkout-details-container-large {
+	display: none;
+}
+
+#checkout-details-container-medium {
+	display: block;
+}
+
+
+@media screen and (min-width: 64em) {
+
+	#checkout-details-container-large {
+		display: block;
+	}
+
+	#checkout-details-container-medium {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 40em) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .middle .box {
+        width: 100%;
+    }
+    .display_branch_input_box .box {
+        width: 100%;
+    }
+
+    .delivery-address, #shipping_method, #shipping_method .cell {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+
+    .checkout-details {
+        width: 100%;
+    }
+}
+
+
